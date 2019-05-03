@@ -20,18 +20,17 @@
                 <input type="text" id="cargo"/>
                 <label>Salário:</label>
                 <input type="number" id="salario"/>
-                <!--<button type="submit">Adicionar</button>-->
                 <button type="button" onclick="adicionaLinha('grid')">Adicionar</button>
             </div>
         </fieldset>
         <h1>Lista de Funcionários</h1>
         <div aria-orientation="horizontal">
-            <button type="button">Ordenar por CPF</button>
-            <button type="button">Ordenar por nome</button>
-            <button type="button">Ordenar por salário(DESC)</button>
+            <button type="button" onclick="orderCpf()">Ordenar por CPF</button>
+            <button type="button" onclick="orderNome()">Ordenar por nome</button>
+            <button type="button" onclick="orderSal()">Ordenar por salário(DESC)</button>
             <label>Salário maior que:</label>
             <input type="number" id="maior"/>
-            <button type="button">Filtrar</button>
+            <button type="button" onclick="filtroSal()">Filtrar</button>
         </div>
         <table id="grid" border="1">
             <tr style="background-color: khaki;">
